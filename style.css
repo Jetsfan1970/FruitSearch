@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.search-container input:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: 0 0 0 3px hsla(0, 87%, 56%, 0.8);
+}
+
+body {
+  background: rgb(232, 181, 9);
+  background: linear-gradient(
+    90deg,
+    rgba(232, 181, 9, 1) 0%,
+    rgba(244, 148, 21, 1) 50%,
+    rgba(250, 99, 5, 1) 100%
+  );
+}
+
+input {
+  display: block;
+  width: 600px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  border-width: 3px;
+  border-color: rgb(219, 50, 50);
+  border-radius: 25px;
+  color: rgb(219, 50, 50);
+}
+
+.search-container {
+  width: 100%;
+  padding: 5%;
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 17%;
+}
+
+.serach-containter .suggestions {
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  max-height: 300px;
+  width: 600px;
+}
+
+.search-container input {
+  background-color: transparent;
+}
+
+.suggestions ul {
+  background-color: rgba(0, 0, 0, 0);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 580px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  color: rgb(219, 50, 50);
+}
+
+.highlight {
+  font-weight: bolder;
+  color: rgb(209, 12, 12);
+}
+
+ul li:hover {
+  background-color: rgba(245, 99, 99, 0.5);
+}
+
+.suggestions ul li:nth-child(n + 8) {
+  display: none;
+}
+
+::placeholder {
+  color: rgb(219, 50, 50);
+}
